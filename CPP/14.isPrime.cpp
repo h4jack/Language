@@ -5,7 +5,9 @@ using namespace std;
 bool isPrime(int n)
 {
     // Corner case
-    if (n <= 1)
+    if(n == 0 or n == 2)
+        return true;
+    if(n == 1)
         return false;
  
     // Check from 2 to n-1
