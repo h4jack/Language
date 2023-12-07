@@ -4,18 +4,15 @@ using namespace std;
  
 bool isPrime(int n)
 {
-    // Corner case
-    if(n == 0 or n == 2)
-        return true;
-    if(n == 1)
-        return false;
- 
-    // Check from 2 to n-1
-    for (int i = 2; i <= n / 2; i++){
-        if (n % i == 0)
-            return false;
+    if (n <= 1) {
+        return 0;
     }
-    return true;
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) {
+            return 0;
+        }
+    }
+    return 1;
 }
 
 int main()
