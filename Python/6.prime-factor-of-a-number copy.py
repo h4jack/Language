@@ -8,7 +8,7 @@ def main():
         print("Invalid Input")
         main()
         exit()
-    for i in range(1,a):
+    for i in range(1,a/2):
         if a % i == 0 and isPriime(i):
             pList.append(i)
     if len(pList) == 0:
