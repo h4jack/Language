@@ -16,3 +16,13 @@ def isArmstrong(a):
 
 if __name__ == '__main__':
     main()
+
+# OUTPUT
+# PS S:\WorkSpace> cd .\Language\Python\
+# PS S:\WorkSpace\Language\Python> py .\18.armstrong-number-or-not.py
+# Enter the number: 153
+# The no 153 is a Armstrong number.
+# PS S:\WorkSpace\Language\Python> py .\18.armstrong-number-or-not.py
+# Enter the number: 470
+# The no 470 is not a Armstrong number.
+# PS S:\WorkSpace\Language\Python> 
