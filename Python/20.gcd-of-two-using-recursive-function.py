@@ -16,7 +16,8 @@ def gcd(a,b,n):
     if a % n == 0 and b % n == 0:
         return n
     else:
-        return gcd(a,b,n-1)
+        n = a
+        return gcd(b%a,n,n)
 
     
 if __name__ == '__main__':

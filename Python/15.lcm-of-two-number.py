@@ -6,12 +6,13 @@ def main():
     print("The lcm of two number {} and {} is {}".format(a,b,lcm(a,b)))
 
 
-def gcd(a,b):
-    gcd = 0
-    for i in range(2,a):
-        if a % i == 0 and b % i == 0:
-            gcd = i
-    return gcd
+def gcd(x, y):
+    g = y
+    while (x > 0):
+        g = x
+        x = y % x
+        y = g
+    return g
 
 
 def lcm(a,b):
